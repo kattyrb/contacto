@@ -1,0 +1,16 @@
+logging:
+  level: INFO
+  loggers:
+    sunat: DEBUG
+
+#Database settings.
+database:
+  # the name of your JDBC driver
+  driverClass: org.hsqldb.jdbc.JDBCDriver
+  # the username
+  user: sa
+  # the password
+  password: sa
+  # the JDBC URL
+  url: jdbc:hsqldb:target/example
+  validationQuery: SELECT * FROM INFORMATION_SCHEMA.SYSTEM_TABLES
